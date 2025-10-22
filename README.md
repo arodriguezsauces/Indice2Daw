@@ -22,3 +22,9 @@ Puedes visitar el proyecto en: [daw2.ieslossauces.es](https://daw2.ieslossauces.
 Proyecto desarrollado por los alumnos/as del ciclo **Desarrollo de Aplicaciones Web** del [IES Los Sauces](https://daw2.ieslossauces.es/).
 
 - [Véronique Grué] (https://github.com/verogmayo)
+
+## 🏫 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**, lo que permite su uso, copia, modificación y distribución, siempre que se mantenga el aviso de derechos de autor original.  
+Consulta el archivo [LICENSE](LICENSE) para conocer los detalles completos.
+
