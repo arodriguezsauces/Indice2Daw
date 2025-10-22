@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-verde: #2a8454;
+  --color-naranja: #e4b14e;
+  --color-blanco: rgb(225, 225, 225);
+  --color-blancoTransparente: rgba(255, 255, 255, 0.4);
+  --bgColor: #f7f7f7;
+  --headerColor: #c0c0c0;
+  --secondColor: #eaeaea;
+  --textColor: #3f3844;
+  --mainColor: #e354f3;
+  --secondaryColor: #17b6f9;
+  --otherColor: #5d6c83;
+
+  --font-sans: "Open Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /*1rem=10px*/
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-sans);
+  background-image: url(../images/diseno-de-plexo-moderno-en-3d-comunicaciones-de-red-techno-moderno\\(
+      1\
+    ).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .body {
+    font-size: 1.4rem;
+  }
+}
+
+/*Utilidades
+==============*/
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2rem 3rem;
+  background-color: var(--color-naranja);
+  border-radius: 1rem;
+  font-weight: 600;
+  color: var(--color-verde);
+  font-size: 1.8rem;
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.title2 {
+  font-family: var(--font-roboto);
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+/*Header
+====================*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background-color: var(--secondColor);
+  box-shadow: 0 1px 0.3rem var(--textColor);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 2%;
+  }
+}
+
+.logo {
+  width: 7rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 7rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1.5rem; /*espacio entre los elementos del nav*/
+}
+.nav-bar a {
+  color: var(--bgColor);
+  font-weight: 600;
+  transition: 0.3 ease; /*ease es para que se haga en todas partes*/
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    gap: 1rem;
+  }
+  .nav-bar a {
+    font-size: 1.2rem;
+  }
+}
+.nav-bar a:hover,
+.nav-bar a.active {
+  /*a.active, Cuando el elemento tenga la clase active*/
+  border-bottom-color: var(--mainColor);
+  color: var(--mainColor);
+}
+.tituloDaw {
+  color: var(--color-verde);
+  font-size: 40px;
+}
+.tituloInsti {
+  color: var(--color-verde);
+}
+
+/*Alumnos
+=================*/
+
+.tituloAlumnos {
+  border: 2px solid var(--color-naranja);
+  border-radius: 3rem;
+  background-color: var(--color-verde);
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+  width: 50%;
+  margin: 100px auto 0;
+}
+
+.tituloAlumnos h2 {
+  font-size: 4rem;
+  font-family: var(--font-roboto);
+  color: var(--color-naranja);
+}
+@media (max-width: 768px) {
+  .tituloAlumnos {
+    width: 100%;
+    margin: 200px auto 0;
+  }
+}
+
+.SectionAlumnos {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Oculta cualquier parte del video que se desborde*/
+  text-align: center;
+}
+.alumnos {
+  text-align: center;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.tituloAlumno {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+.alumno {
+  border: 2px solid var(--color-naranja);
+  border-radius: 2rem;
+  background-color: var(--color-verde);
+  margin: 3.5rem;
+  padding: 0 0 2.5rem 0;
+  transition-duration: 0.5s;
+  color: red;
+  font-weight: 700;
+}
+
+.alumno:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 100;
+  box-shadow: 0 0 2rem var(--color-naranja);
+}
+.alumno a {
+  font-size: 1.9rem;
+  color: var(--color-naranja);
+  text-transform: uppercase;
+}
+
+.tituloAlumno a {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid var(--color-verde);
+  border-radius: 50%;
+  font-size: 4.2rem;
+  color: var(--color-naranja);
+  /* margin: 3rem 1.5rem 3rem 0; */
+}
+
+.tituloAlumno a:hover {
+  cursor: pointer;
+}
+.alumno p {
+  padding: 1rem 0 0 0;
+}
+
+/*Footer
+========================*/
+
+.footer {
+  background-color: var(--secondColor);
+  color: var(--color-verde);
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerText {
+  text-align: center;
+  color: var(--color-verde);
+}
+.flecha a {
+  display: inline-flex;
+  color: var(--color-verde);
+  font-size: 2rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+}
+
+.flecha a:hover {
+  transform: scale(1.1) translateY(-1rem);
+}
