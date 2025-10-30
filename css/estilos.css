@@ -29,9 +29,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--font-sans);
-  background-image: url(../images/diseno-de-plexo-moderno-en-3d-comunicaciones-de-red-techno-moderno\\(
-      1\
-    ).jpg);
+  background-image: url(../images/FondoModerno.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -166,7 +164,7 @@ body {
 }
 
 .SectionAlumnos {
-  position: relative;
+  position: relative; /* sirve para colocar despues el logo de github */
   width: 100%;
   overflow: hidden; /* Oculta cualquier parte del video que se desborde*/
   text-align: center;
@@ -178,16 +176,19 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 .tituloAlumno {
+  position: absolute; /* para poner el logo en cualquier posicion respecto al padre */
+  right: 0; /* lo ponemos a la derecha  */
   display: flex;
   justify-content: flex-end;
   padding-right: 5px;
 }
 .alumno {
+  position: relative;
   border: 2px solid var(--color-naranja);
   border-radius: 2rem;
   background-color: var(--color-verde);
   margin: 3.5rem;
-  padding: 0 0 2.5rem 0;
+  /* padding: 0 0 2.5rem 0; */
   transition-duration: 0.5s;
   color: red;
   font-weight: 700;
@@ -205,8 +206,9 @@ body {
   text-transform: uppercase;
 }
 
+
 .tituloAlumno a {
-  display: flex;
+  /* display: flex; */
   width: 4rem;
   height: 4rem;
   border: 0.2rem solid var(--color-verde);
@@ -220,7 +222,14 @@ body {
   cursor: pointer;
 }
 .alumno p {
-  padding: 1rem 0 0 0;
+  /* padding: 4rem 0 0 0; */
+  height: 100%; /* para que ocupe todo el alto del div alumno */
+}
+.alumno>p>a{
+  display: block; /* para poder darle dimensiones al enlace */
+  padding: 5rem 0 2rem 0; /* para que la caja sea más grande y este toda "llena" del enlace de cada alumno */
+  width: 100%; /* para que ocupe todo el ancho del p */
+  height: 100%; /* para que ocupe todo el alto del p */
 }
 
 /*Footer
