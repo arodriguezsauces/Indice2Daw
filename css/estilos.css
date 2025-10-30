@@ -29,9 +29,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--font-sans);
-  background-image: url(../images/diseno-de-plexo-moderno-en-3d-comunicaciones-de-red-techno-moderno\\(
-      1\
-    ).jpg);
+  background-image: url(../images/fondoAzul.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
